@@ -11,6 +11,126 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font, sans-serif);
+  font-variation-settings: 'wght' var(--card-text-weight, 400);
+  font-size: 18px;
+  background-image:
+    repeating-linear-gradient(to right, #d3d3d3 0px, #d3d3d3 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 4px),
+    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color, #fff);
+  margin: 100px 0px;
+  inline-size: var(--content-inline-size, 100%);
+  block-size: 368px;
+  font-family: var(--accent-font, fantasy);
+  outline: var(--outline-style);
+}
+
+.header-title {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.card {
+  background-color: var(--bg-color);
+  inline-size: var(--content-inline-size, 100%);
+  margin-bottom: 52px;
+}
+
+.card-title {
+  font-variation-settings: 'wght' var(--card-title-weight, 700);
+  outline: var(--outline-style);
+  padding: 4px 10px;
+}
+
+.img-box {
+  position: relative;
+}
+
+.card-img__text {
+  position: absolute;
+  top: 28px;
+  right: 26px;
+  font-family: var(--accent-font, fantasy);
+  font-size: 14px;
+  -webkit-text-stroke: 1px #fff;
+  opacity: 50%;
+  mix-blend-mode: hard-light;
+}
+
+.card-img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-description {
+  padding: 22px 25px 25px; 
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card-text {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.card__icon-button {
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+}
+
+.card__like-button {
+  background-color: transparent;
+  block-size: 38px;
+  inline-size: 128px;
+  padding: 0px;
+  border: none;
+  outline: var(--outline-style);
+  font-family: var(--accent-font, fantasy);
+  font-size: 14px;
+}
+
+@supports (-webkit-text-stroke: 1px #fff) {
+  .card-img__text {
+    text-shadow: 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, -1px -1px 0 #fff;
+  }
 }
