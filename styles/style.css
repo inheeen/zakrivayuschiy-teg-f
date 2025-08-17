@@ -122,7 +122,7 @@
 .card__icon-button:focus {
     outline: none;
 }
-.card__icon-button:focus-visible {  
+.card__icon-button:focus-visible {
   border-color: var(--hover-fill-color, #000);
 }
 
