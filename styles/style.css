@@ -82,7 +82,6 @@
   right: 26px;
   font-family: var(--accent-font, fantasy);
   font-size: 14px;
-  font-variation-settings: 'wght' var(--card-text-weight, 410);
   text-shadow: 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, -1px -1px 0 #fff;
   opacity: 50%;
   mix-blend-mode: hard-light;
@@ -98,6 +97,7 @@
 }
 
 .card-description {
+  font-variation-settings: 'wght' var(--card-text-weight, 410);
   padding: 26px 25px 25px;
   display: flex;
   flex-direction: column;
@@ -250,6 +250,7 @@
 }
 
 .button__text {
+  font-variation-settings: 'wght' var(--card-text-weight, 410);
   position: relative;
   z-index: 2;
   margin-left: 8px;
@@ -290,6 +291,7 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
+  font-variation-settings: 'wght' var(--card-text-weight, 410);
 }
 
 .dialog__icon {
