@@ -209,7 +209,6 @@
 .card__like-button {
   block-size: 40px;
   inline-size: 128px;
-  border: none;
   border: var(--outline-style);
 }
 .interactive-btn::before {
